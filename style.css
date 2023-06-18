@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(250, 249, 244);
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes fade{
+    from {background: white;}
+    to {background:rgb(221, 219, 219);}
+}
+@keyframes nav-fade{
+    from {background:rgb(27, 62, 83);
+        color:rgb(229, 232, 238);}
+    to {
+        background:rgb(229, 232, 238);
+        color:rgb(27, 62, 83);
+    }
+}
+
+.navbar{
+    background-color: rgb(27, 62, 83);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    height: 45px;
+    margin-left: 10%;
+    /* margin-top: 10px; */
+}
+.navbar input{
+    display: block;
+    margin-left: 5px;
+    height: 15%;
+    width: 20%;
+    /* align-items: center; */
+}
+.links{
+    margin-right: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    border-radius: 3px;
+}
+.links a:hover{
+    background:white;
+    color:rgb(27, 62, 83);
+    animation-name: nav-fade;
+    animation-duration: 1s;
+}
+.main-content{
+    display: flex;
+}
+
+                    /* LEFT SIDEBAR */
+
+.left-sidebar{
+    height: 30%;
+    width: 15%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background: white;
+    box-shadow: 0 0 1px rgb(80, 78, 78);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+.left-sidebar img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: solid 4px rgb(221, 219, 219);
+    margin-top:65px;
+}
+.sidebar-block{
+    background:rgb(27, 62, 83);
+    height: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+.left-sidebar h2{
+    color: black;
+    margin-top: 20%;
+}
+.caption{ 
+    color:rgb(156, 154, 154);
+}
+.sidebar-stat{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(18, 183, 212)
+}
+.left-sidebar hr{
+    width: 80%;
+}
+
+                    /* MIDDLE BLOCKS */
+.center{
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 3%;
+}
+.center-block-top{
+    margin-left: 5%;
+    height: 5%;
+    width: 90%;
+    background: white;
+    border-radius: 3%;
+    margin-top: 0%;
+    padding-bottom:10px;
+    box-shadow: 0 0 1px rgb(80, 78, 78);
+}
+.center-block-top-upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center-block-top img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+.center-block-top input{
+    width: 80%;
+    height: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+.operations{
+    display:flex;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    /* justify-content: center; */
+}
+.operations a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    padding: 5px;
+    margin: 5px;
+    font-size: small;
+    width: 80%;
+    border-radius: 10%;
+}
+.operations a:hover{
+    color:black;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.center-block{
+    background: white;
+    padding: 10px;
+    border-radius: 2%;
+    margin: 10px;
+    box-shadow: 0 0 1px rgb(80, 78, 78);
+}
+.center-block img{
+    width: 80%;
+    padding: 10px;
+}
+.center-block a{
+    text-decoration: none;
+    color: black;
+}
+.center-block a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+            /* CAROUSEL */
+
+.carousel{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carousel img{
+    display: none;
+    width: 50%;
+    height: 150px;
+}
+.carousel button{
+    background:rgb(27, 62, 83);
+    color:rgb(221, 219, 219);
+    border-radius: 100%;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+                /* RIGHT SIDEBAR */
+.right-sidebar-list{
+    display: flex;
+    flex-direction: column;
+}
+.right-sidebar-list a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.right-sidebar-list a:hover{
+    background:rgb(221, 220, 220);
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+                /* MESSAGE FORM */
+
+.message-form{
+    width: 70%;
+    background: white;
+    border-radius: 5%;
+    padding: 20px;
+    margin-left: 15%;
+    margin-top: 5%;
+    box-shadow: 0 0 1px rgb(80, 78, 78);
+}
+.message-form form{
+    display: flex;
+    flex-direction: column;
+}
+.message-form input{
+    margin-bottom: 20px;
+    width: 60%;
+    border-radius: 3px;
+}
+.button{
+    /* width: 10%; */
+    margin-top: 5%;
+    background:rgb(27, 62, 83);
+    color:rgb(221, 220, 220);
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+                        /* PROFILE */
+
+.profile-body{
+    display: flex;
+    margin: 3%;
+}
+.profile-left{
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 20%;
+    display: none;
+}
+.profile-left img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: solid 4px rgb(221, 219, 219);
+    margin-top:65px;
+}
+.profile-left-content{
+    margin: 1%;
+    margin-top: 10%;
+    display: flex;
+}
+.initial-content{
+    width: 40%;
+    margin: 3%;
+}
+.profile-bio{
+    margin: 3%;
+    width: 60%;
+}
+.profile-bio h1{
+    text-align: center;
+}
+#more-text{
+    display: none;
+}
+
+        /* PROFILE RIGHT SIDEBAR */
+
+.right-sidebar-top a{
+    text-decoration: none;
+    color:rgb(156, 154, 154);
+}
+.right-sidebar-top a:hover{
+    text-decoration: underline;
+}
+.expand-button{
+    border-radius: 100%;
+    transform: rotate(-90deg);
+    font-size: 1.2em;
+}
+.list-profiles{
+    display: none;
+}

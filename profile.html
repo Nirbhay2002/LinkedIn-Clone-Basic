@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png">
+        <input type="text" placeholder="Search">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html">MyNetwork</a>
+            <a href="message.html">Messaging</a>
+            <a href="index.html">Notifications</a>
+            <a href="#">Me</a>
+        </div>
+    </div>
+<div class="profile-body">
+    <div class="profile-left">
+        <div class="sidebar-block"><img src="person.jpg"></div>
+        <div class="profile-left-content">
+            <div class="initial-content">
+                <h1>John Doe</h1>
+                <p>Senior Manager at Denali Bank</p>
+                <small>New York, USA</small>
+            </div>
+            <div class="profile-bio">
+                <h1>Bio</h1>
+                <p id="read-more-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In error laborum modi, odit id nobis magni blanditiis ipsam fugit tenetur molestias illum at eum iusto, sint soluta? Corporis, ducimus ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In error laborum modi, odit id nobis magni blanditiis ipsam fugit.<span id="dots">...</span> <span id="more-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In error laborum modi, odit id nobis magni blanditiis ipsam fugit tenetur molestias illum at eum iusto, sint soluta? Corporis, ducimus ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In error laborum modi, odit id nobis magni blanditiis ipsam fugit</span></p>
+                <button class="button" id="read-more-button" onclick="toggleRead()">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-sidebar" style="margin-left: 2%; display: none;">
+        <div class="right-sidebar-top">
+            <a href="#">Edit public profile & URL</a>
+            <hr>
+            <a href="#">Add profile in another language</a>
+        </div>
+        <hr>
+        <div class="right-sidebar-top">
+            <p>People also viewed</p>
+            <div class="list-profiles">
+                <div class="list-profile-item">
+                    <h2>Max Cillian</h2>
+                    <p>Manager at Times Square</p>
+                    <hr>
+                </div>
+                <div class="list-profile-item">
+                    <h2>Daniel Seinfield</h2>
+                    <p>Senior Executive Officer</p>
+                    <hr>
+                </div>
+                <div class="list-profile-item">
+                    <h2>Jimmy O Yang</h2>
+                    <p>Comedian</p>
+                </div>
+            </div>
+            <button class="expand-button" onclick="toggleProfiles()"> < </button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>
