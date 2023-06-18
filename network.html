@@ -40,7 +40,41 @@
                 <button class="button" style="margin-bottom: 5px;">Follow</button>
             </div>
         </div>
+        <div class="network-more-content">
+            <div class="network-card">
+                <img src="person2.jpg">
+                <h2>Dan Brown</h2>
+                <p class="caption">Assistant Regional Manager, Dunder Mifflin</p>
+                <button class="button" style="margin-bottom: 5px;">Follow</button>
+            </div>
+            <div class="network-card">
+                <img src="person2.jpg">
+                <h2>Dan Brown</h2>
+                <p class="caption">Assistant Regional Manager, Dunder Mifflin</p>
+                <button class="button" style="margin-bottom: 5px;">Follow</button>
+            </div>
+            <div class="network-card">
+                <img src="person2.jpg">
+                <h2>Dan Brown</h2>
+                <p class="caption">Assistant Regional Manager, Dunder Mifflin</p>
+                <button class="button" style="margin-bottom: 5px;">Follow</button>
+            </div>
+        </div>
+        <button id="network-read-more-button"><</button>
     </div>
 </body>
-<srcipt src="network.js"></srcipt>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+     $(document).ready(function() {
+    $('#network-read-more-button').click(function() {
+      $('.network-more-content').toggleClass('network-show-content');
+      if ($('.network-more-content').hasClass('network-show-content')) {
+        $('#network-read-more-button').text('>');
+      } else {
+        $('#network-read-more-button').text('<');
+      }
+    });
+  });
+</script>
 </html>

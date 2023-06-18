@@ -38,7 +38,7 @@ const toggleProfiles = () =>{
 //FADING ANIMATION
 
 $(document).ready(function() {
-    $('.profile-left').fadeIn(2000);
+    $('.profile-left').fadeIn(1000);
     $('.profile-body .left-sidebar').fadeIn(2000);
   });
 

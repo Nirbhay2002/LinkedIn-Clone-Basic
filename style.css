@@ -311,10 +311,12 @@ body{
     text-align: center;
     width: 100%;
     /* margin: 5%; */
+    background: white;
 }
 .cards-container{
     background: white;
     display: flex;
+    justify-content: space-between;
 }
 .network-card{
     background: white;
@@ -330,5 +332,19 @@ body{
     height: 100px;
     margin: 3%;
     border-radius: 10%;
-    
+}
+.network-more-content{
+    overflow: hidden;
+    display: none;
+}
+.network-show-content{
+    display: flex;
+    justify-content: space-between;
+}
+#network-read-more-button{
+    border-radius: 100%;
+    background:rgb(27, 62, 83);
+    color:rgb(156, 154, 154);
+    font-size: 1.2em;
+    transform: rotate(-90deg);
 }
