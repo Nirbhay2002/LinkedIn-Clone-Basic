@@ -21,15 +21,35 @@
         
     </div>
     <div class="message-form">
-        <form>
-            <label>To: </label> <input placeholder="e.g: username@gmail.com">
-            <label>Subject: </label> <input placeholder="Enter Text">
+        <form id="message-form">
+            <label>To: </label> <input id="email" type="text" name="To" placeholder="e.g: username@gmail.com">
+            <label>Subject: </label> <input id="subject" type="text" name="Subject" placeholder="Enter Text">
             <text>Content</text><br>
-            <textarea placeholder="Enter Text"></textarea>
+            <textarea id="content" placeholder="Enter Text" name="Content"></textarea>
+            <input type="submit" onclick="window.alert('Message Sent')" class="button"></input>
         </form>
-        <button onclick="window.alert('Message Sent')" class="button">Send</button>
+        <div id="form-result" style="display: none;">
+            <h3>Message sent:</h3>
+            <ul id="form-list"></ul>
+          </div>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="index.js"></script>
+<script>
+    $(document).ready(function() {
+      $('#message-form').submit(function(e) {
+        e.preventDefault(); // Prevent form submission
+        var formData = $(this).serializeArray();
+        var listItems = '';
+        
+        formData.forEach(function(item) {
+          listItems += '<li><strong>' + item.name + ':</strong> ' + item.value + '</li>';
+        });
+        
+        $('#form-list').html(listItems);
+        $('#form-container').hide();
+        $('#form-result').show();
+      });
+    });
+</script>
 </html>

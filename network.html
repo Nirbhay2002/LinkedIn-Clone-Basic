@@ -71,8 +71,10 @@
       $('.network-more-content').toggleClass('network-show-content');
       if ($('.network-more-content').hasClass('network-show-content')) {
         $('#network-read-more-button').text('>');
+        $('.network-more-content').fadeIn(1000);
       } else {
         $('#network-read-more-button').text('<');
+        $('.network-more-content').fadeOut(1000);
       }
     });
   });
